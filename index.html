@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top{
+            height: 200px;
+            width: 500px;
+            background-image: linear-gradient(200deg,black,red,green,blue,pink,yellow,white,orange);
+            padding: 50px;
+        }
+        .top1{
+            margin-left: 0px;
+            padding: 10px;
+            color: rgb(15, 14, 14);
+        }
+        .top1:active+.bottom1{
+            background-color: blue;  
+            display: block;
+            color: red;
+            
+        }
+        .bottom1{
+            display: none;
+
+            width: 100px;
+        }
+        .top2{
+            margin-left: 200px;
+            margin-top: 30px;
+            background-color: rgb(186, 143, 226);
+            color: black;
+            font-size: 20px;
+            
+        }
+        .top2:active+.bottom2{
+            background-color: rgb(122, 22, 82);  
+            display: block;
+            color: red;  
+        }
+        .bottom2{
+            display: none;
+        }
+        .top3{
+            
+            margin-left: 450px;
+            background-color: rgb(96, 32, 155);
+            color: white;
+            padding: 10px;
+        }
+        .top3:active~.bottom3{
+            background-color: rgb(122, 22, 82);  
+            display: block;
+            color: red;  
+        }
+        .bottom3{
+            display: none;
+            width: 200px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+
+        
+        <h1 class="top1">content</h1>
+        <p class="bottom1">content is a uncountable noun we use it when referring to the ideas or subject</p>
+
+
+        <button class="top2">heading</button>
+        <h1 class="bottom2">head</h1>
+
+        <button class="top3">images</button>
+       
+            <img src="../assets/images/bird.jpg" class="bottom3"/>
+            <img src="../assets/images/pexels-photo-668465.jpg" class="bottom3"/>
+            <img src="../assets/images/wow.jpeg" class="bottom3"/>
+        
+    </div>    
+</body>
+</html>
+
+
+        
